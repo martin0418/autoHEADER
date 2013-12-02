@@ -45,6 +45,8 @@ fun! s:insert_header_with_ft(ft)
 
             let messages=[['File Name' , s:filename],
                         \ ['Created By' , g:autoHEADER_default_author],
+                        \ ['Email' , g:autoHEADER_default_email],
+                        \ ['Homepage' , g:autoHEADER_default_homepage],
                         \ ['Creation Date' , '[' . strftime("%Y-%m-%d %H:%M") . ']'],
                         \ ['Last Modified' , '[AUTO_UPDATE_BEFORE_SAVE]'],
                         \ ['Description' , ' '],]
